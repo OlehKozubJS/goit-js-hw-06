@@ -11,6 +11,7 @@ function loginFunction(event) {
 
   if (email.value === "" || password.value === "") {
     alert("Please fill in the login and/or password fields!");
+    return;
   }
 
   let userData = {
