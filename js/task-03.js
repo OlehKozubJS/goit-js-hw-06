@@ -20,4 +20,4 @@ images.forEach(image => {
   galleryImages.push(`<li><img src="${image.url}" alt="${image.alt}"></img></li>`);
 });
 
-gallery.insertAdjacentHTML("afterbegin", galleryImages);
+gallery.insertAdjacentHTML("afterbegin", galleryImages.join(""));
