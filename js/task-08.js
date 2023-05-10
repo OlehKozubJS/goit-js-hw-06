@@ -10,15 +10,15 @@ function loginFunction(event) {
   } = loginForm;
 
   if (email.value === "" || password.value === "") {
-    return console.log("Please fill in the login and/or password fields!");
+    alert("Please fill in the login and/or password fields!");
   }
 
   let userData = {
-    userEmail: email.value,
-    userPassword: password.value,
+    Login: email.value,
+    Password: password.value,
   };
 
-  console.log(`Login: ${userData.userEmail}, Password: ${userData.userPassword}`);
+  console.log(userData);
 
   loginForm.reset();
 }
